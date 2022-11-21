@@ -1,0 +1,343 @@
+---
+layout: default
+title: Home
+---
+
+<div class="dark-wrapper">
+  <!-- Landing page Hero -->
+  <section class="hero is-fullheight is-transparent">
+    <div class="hero-head">
+      <!-- Cloned navbar -->
+      {{> navbar-clone}}
+
+      <!-- Static navbar -->
+      {{> navbar}}
+    </div>
+
+    <!-- Animated particles -->
+    <div x-data="initHero()" x-init="initParticles()" id="particles-js"></div>
+
+    <!-- Hero Image and Title -->
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <!-- Landing page Title -->
+          <div class="column is-5 landing-caption">
+            <h1 class="title is-1 is-light is-semibold is-spaced main-title">
+              ErgoFinance DEX
+            </h1>
+            <h2 class="subtitle is-5 is-light is-thin">
+              Makes DEX trading simple, accessible, and affordable on Ethereum L1 and L2’s.
+            </h2>
+            <!-- CTA -->
+            <p class="buttons">
+              <a href="#start" class="button k-button k-primary raised has-gradient is-fat is-bold">
+                <span class="text">BUY $ERGO</span>
+                <span class="front-gradient"></span>
+              </a>
+              <a href="#" class="button k-button k-primary raised has-gradient is-fat is-bold">
+                <span class="text">DISCOVER $ERGO</span>
+                <span class="front-gradient"></span>
+              </a>
+            </p>
+          </div>
+          <!-- Hero image -->
+          <div class="column is-7">
+            <figure class="image">
+              <img src="/img/illustrations/buildings.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Landing page Hero -->
+
+  <!-- Side Features section -->
+  <section id="big-gradient" class="section is-transparent">
+    <!-- Container -->
+    <div class="container">
+      <!-- Divider -->
+      <div class="divider is-centered"></div>
+      <!-- Title & subtitle -->
+      <h2 class="title is-light is-semibold has-text-centered is-spaced">
+        Core Strength
+      </h2>
+      <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+        Our innovative dApp brings you:
+      </h4>
+      <br>
+      <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+        ⚪ the best value for your swaps by comparing multiple Dexs, picking the best rates for you.
+      </h4>
+      <br>
+      <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+        ⚪ reduced slippage using multiple pools in our MetaDEX Aggregator, to execute your trade.
+      </h4>
+      <br>
+      <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+        ⚪ automatically processed, decentralized limit orders.
+      </h4>
+      <br>
+      <h4 class="subtitle is-6 is-light has-text-centered is-compact">
+        ⚪ additional LP fees on every trade. Up to 5% of your order size.
+      </h4>
+      <br>
+      <h2 class="title is-light is-semibold has-text-centered is-spaced">
+        Combined, ErgoFinances’s dApp provides you more , if not the best value for every trade you make !
+      </h2>
+      <h2 class="title is-light is-semibold has-text-centered is-spaced">
+        And if that isn’t enough, we took care of slippage, front running bots and fees so you no longer have to.
+      </h2>
+      <br>
+      <br>
+      <br>
+      <!-- Content wrapper -->
+      <!-- Divider -->
+      <div class="divider is-centered"></div>
+      <!-- Title & subtitle -->
+      <h2 class="title is-light is-semibold has-text-centered is-spaced">
+        These are our core building blocks
+      </h2>
+      <div class="content-wrapper is-large">
+        <div class="columns is-vcentered">
+          <!-- Feature content -->
+          <div class="column is-5 is-offset-1">
+            <div class="side-feature-content">
+              <h3 class="title is-4 is-light">
+                <img src="/img/icons/ico/bitbanner.svg" alt="" />
+                <span>Secure audited smart contracts</span>
+              </h3>
+              <div class="divider is-long"></div>
+              <p class="is-light">
+                The dapp was audited in multiple iterations in both internal and external testing environments. The
+                external testing was performed by CertiK, Mythx and OpenZeppelin.
+              </p>
+              <br>
+              <div class="cta-wrapper">
+                <a href="token.html" class="button k-button k-primary raised has-gradient is-bold">
+                  <span class="text">See Here</span>
+                  <span class="front-gradient"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature image -->
+          <div class="column is-7">
+            <img class="side-feature" src="/img/illustrations/token.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="columns is-vcentered">
+          <!-- Feature image desktop -->
+          <div class="column is-7 is-hidden-mobile">
+            <img class="side-feature" src="/img/illustrations/blockchain-blocks.svg" alt="" />
+          </div>
+
+          <!-- Feature content -->
+          <div class="column is-5">
+            <div class="side-feature-content">
+              <h3 class="title is-4 is-light">
+                <img src="/img/icons/ico/bitnetwork.svg" alt="" />
+                <span>Off-chain keepers at work</span>
+              </h3>
+              <div class="divider is-long"></div>
+              <p class="is-light">
+                The ErgoFinance protocol utilizes the Chainlink Keepers to make sure orders are collected as soon as the
+                price target of the limit order is reached. This service is provided off-chain, fully decentralized.
+              </p>
+              <br>
+              <p class="is-light">
+                You can read more about Chainlink Keeper and ErgoFinances’s full scale integration in this Medium
+                article.
+              </p>
+              <div class="cta-wrapper">
+                <a href="#" class="button k-button k-primary raised has-gradient is-bold">
+                  <span class="text">Read Here</span>
+                  <span class="front-gradient"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature image only for mobile -->
+          <div class="column is-7 is-hidden-desktop is-hidden-tablet">
+            <img class="side-feature" src="/img/illustrations/blockchain-blocks.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="columns is-vcentered">
+          <!-- Feature content -->
+          <div class="column is-5 is-offset-1">
+            <div class="side-feature-content">
+              <h3 class="title is-4 is-light">
+                <img src="/img/icons/ico/bitmining.svg" alt="" />
+                <span>High utility $ERGO token</span>
+              </h3>
+              <div class="divider is-long"></div>
+              <p class="is-light">
+                $ERGO is a utility token which is used for paying limit order fees and end-to-end usage of gasless mode
+                (optional feature, coming very soon).
+              </p>
+              <br>
+              <p class="is-light">
+                For every limit order, the ErgoFinance protocol user only pays a service fee in $ERGO, of the amount
+                traded.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature image -->
+          <div class="column is-7">
+            <img class="side-feature" src="/img/illustrations/crypto-mining.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- /Content wrapper -->
+    </div>
+    <!-- /Container -->
+    <!-- Spaced divider -->
+    <div class="divider is-centered is-spacer"></div>
+    <!-- Title & subtitle -->
+    <h2 class="title is-light is-semibold has-text-centered is-spaced">FAQ</h2>
+
+    <!-- Content wrapper -->
+    <div class="content-wrapper is-large">
+      <div class="columns">
+        <div class="column is-5 is-offset-1">
+
+          <!-- Accordion -->
+          <div class="accordion">
+            <!-- Option -->
+            <div class="accordion-option">
+              <input type="checkbox" id="toggle1" class="accordion-toggle" />
+              <label class="accordion-title" for="toggle1">
+                What are $ERGO tokenomics?
+              </label>
+              <div class="accordion-content">
+                <p>Initially 100M ERGO tokens were in existence. Liquidity has been deployed to the Uniswap protocol
+                  (original Uniswap LP token will be burned), 20M to Arbitrum, Optimism to provide layer 2 liquidity.
+                  8M (20%) is added on Gnosis, a multi-signature wallet. 12M (12%) Will be locked on Unicrypt for
+                  vesting.</p>
+              </div>
+            </div>
+
+            <!-- Option -->
+            <div class="accordion-option">
+              <input type="checkbox" id="toggle2" class="accordion-toggle" />
+              <label class="accordion-title" for="toggle2">
+                How do I use ErgoFinance DEX?
+              </label>
+              <div class="accordion-content">
+                <p>Connect your wallet. Depending on whether you wish to use the swap or the limit order feature, you
+                  will need $ETH and $ERGO in your wallet. The interface is just as straightforward as using Uniswap for
+                  example, but with our limit order feature. Use normal or pro-mode to set your limit order and click
+                  trade. When the market conditions match your order, ErgoFinance DEX will execute the trade
+                  automatically.
+                </p>
+              </div>
+            </div>
+
+            <!-- Option -->
+            <div class="accordion-option">
+              <input type="checkbox" id="toggle3" class="accordion-toggle" />
+              <label class="accordion-title" for="toggle3">
+                Is the ERGO token code audited?
+              </label>
+              <div class="accordion-content">
+                <p>Yes! ERGO token is a non-mintable ERC 20 token audited by OpenZeppelin, MythX and CertiK.
+                </p>
+              </div>
+            </div>
+
+            <!-- Option -->
+            <div class="accordion-option">
+              <input type="checkbox" id="toggle4" class="accordion-toggle" />
+              <label class="accordion-title" for="toggle4">
+                Why do I have to pay a fee for limit orders?
+              </label>
+              <div class="accordion-content">
+                <p>ErgoFinance requires a fee to cover the cost of the trade processor (ChainLink Keepers). When a trade
+                  is processed $ERGO is deducted from the protocol user’s balance on the dapp and sent to the trade
+                  processor to cover the gas cost. Hence, the $ERGO tokens are circulating: DEX Liquidity Pool -> User
+                  -> ErgoFinance Protocol -> DEX Liquidity Pool.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Accordion -->
+        </div>
+
+
+        <div class="column is-5">
+
+          <!-- Accordion -->
+          <div class="accordion">
+            <!-- Option -->
+            <div class="accordion-option">
+              <input type="checkbox" id="toggle6" class="accordion-toggle" />
+              <label class="accordion-title" for="toggle6">
+                Is $ERGO token a utility token?
+              </label>
+              <div class="accordion-content">
+                <p>Yes! $ERGO is a utility token as it is used to pay the fee for all ErgoFinance DEX limit orders and
+                  end-to-end usage of gasless mode (optional feature, coming very soon).
+                </p>
+                <p>You can also use our swap aggregator, for this you only need to hold ETH in your wallet to cover
+                  gasfees. Again use normal or pro-mode to fill out your swap and click swap. Your swap is executed in a
+                  heartbeat!</p>
+              </div>
+            </div>
+
+            <!-- Option -->
+            <div class="accordion-option">
+              <input type="checkbox" id="toggle7" class="accordion-toggle" />
+              <label class="accordion-title" for="toggle7">
+                Why and how much $ERGO do I have to pay a fee for limit orders?
+              </label>
+              <div class="accordion-content">
+                <p>The fee is dependent on the current gas fee. The maximum fee is calculated as follows: base fee * gas
+                  fee * protocol fee. As you can see, we don’t take the amount that is being traded into consideration.
+                  This offers you the opportunity to trade at a very interesting, fixed price. Fixed, as in not
+                  depending on your amount traded. We refer to our docs for more details on the exact calculation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Option -->
+            <div class="accordion-option">
+              <input type="checkbox" id="toggle9" class="accordion-toggle" />
+              <label class="accordion-title" for="toggle9">
+                Do I have to own $ERGO tokens to use ErgoFinance DEX?
+              </label>
+              <div class="accordion-content">
+                <p>Yes and no :) If you wish to use only the swap aggregator, you don’t need to own $ERGO. However, if
+                  you wish to use our limit order feature, you will need $ERGO to cover the service fee.
+                </p>
+              </div>
+            </div>
+
+            <!-- Option -->
+            <div class="accordion-option">
+              <input type="checkbox" id="toggle10" class="accordion-toggle" />
+              <label class="accordion-title" for="toggle10">
+                Is ErgoFinance code open-source?
+              </label>
+              <div class="accordion-content">
+                <p>Yes! ErgoFinance entire codebase is open-sourced and published on Github under the MIT and GPL-3.0
+                  license. Anybody can see how it was developed, built and who are the code contributors. Developers are
+                  encouraged to submit a PR if they are willing to contribute.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Accordion -->
+        </div>
+      </div>
+    </div>
+    <!-- /Content wrapper -->
+</div>
+</section>
+<!-- /Side Features section -->
+</div>

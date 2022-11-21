@@ -1,0 +1,105 @@
+---
+layout: default
+title: Roadmap
+---
+
+<div class="roadmap-wrapper">
+    <!-- Landing page Hero -->
+    <section class="hero is-medium">
+        <div class="hero-head">
+
+            <!-- Cloned navbar -->
+            {{> navbar-clone}}
+
+            <!-- Static navbar -->
+            {{> navbar}}
+
+        </div>
+
+        <div class="hero-body has-text-centered">
+            <div class="columns">
+                <div class="column is-6 is-offset-3">
+                    <div class="roadmap-image">
+                        <img src="/img/illustrations/world.svg">
+                    </div>
+                    <h1 class="title is-2 is-light is-semibold is-spaced main-title">BUIDL Plan</h1>
+                    <!-- CTA -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section x-data="initRoadmap()" x-init="setupRoadmap()" id="roadmap" class="main-timeline">
+        <ul>
+            <li>
+                <div>
+                    <span class="item-title">Q4 2022</span>
+                    <span class="item-content">
+                        Launching the ErgoFinance protocol on Ethereum Mainnet (audit completion).
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span class="item-title">Q1 2023</span>
+                    <span class="item-content">
+                        Enabling Gasless limit trading feature.
+                    </span>
+                    <span class="item-content">
+                        Liquidity farming rewards for ERGO liquidity providers on Celer bridge.
+                    </span>
+                    <span class="item-content">
+                        Launching the ErgoFinance protocol on Arbitrum Layer2 network.
+                    </span>
+                    <span class="item-content">
+                        CEX listing.
+                    </span>
+                    <span class="item-content">
+                        ErgoFinance v2 (new features, modern UI, hybrid DEX).
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span class="item-title">Q2-Q3 2023</span>
+                    <span class="item-content">
+                        Liquidity farming rewards for ERGO liquidity providers on Uniswap on all networks.
+                    </span>
+                    <span class="item-content">
+                        Adding gasless market swap feature to ErgoFinance protocol.
+                    </span>
+                    <span class="item-content">
+                        ErgoFinance DAO governance launch
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span class="item-title">Q4 2023</span> 
+                    <span class="item-content">
+                        Create ERGO/OP liquidity pool.
+                    </span>
+                    <span class="item-content">
+                        Liquidity mining program for ERGO/OP.
+                    </span>
+                    <span class="item-content">
+                        Launch perpetual trading.
+                    </span>
+                    <span class="item-content">
+                        Launch referral program on Optimism.
+                    </span>
+                    <span class="item-content">
+                        Gas refund program on Optimism.
+                    </span>
+                    <span class="item-content">
+                        Implement fiat on-ramp service.
+                    </span>
+                    <span class="item-content">
+                        Implement cross-chain bridge solution.
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+</div>
