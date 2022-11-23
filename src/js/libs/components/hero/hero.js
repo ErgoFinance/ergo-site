@@ -4,24 +4,24 @@ export function initHero() {
             particlesJS("particles-js", {
                 "particles": {
                     "number": {
-                        "value": 50,
+                        "value": 6,
                         "density": {
                             "enable": true,
-                            "value_area": 1000
+                            "value_area": 800
                         }
                     },
                     "color": {
-                        "value": ["#5507fc"]
+                        "value": ["#1b1e34"]
                     },
     
                     "shape": {
-                        "type": "circle",
+                        "type": "polygon",
                         "stroke": {
-                            "width": 5,
-                            "color": "#5507fc"
+                            "width": 0,
+                            "color": "#000"
                         },
                         "polygon": {
-                            "nb_sides": 5
+                            "nb_sides": 6
                         },
                         "image": {
                             "src": "img/github.svg",
@@ -30,7 +30,7 @@ export function initHero() {
                         }
                     },
                     "opacity": {
-                        "value": 0.6,
+                        "value": 0.3,
                         "random": false,
                         "anim": {
                             "enable": false,
@@ -40,17 +40,17 @@ export function initHero() {
                         }
                     },
                     "size": {
-                        "value": 2,
+                        "value": 160,
                         "random": true,
                         "anim": {
                             "enable": false,
-                            "speed": 40,
-                            "size_min": 0.1,
+                            "speed": 10,
+                            "size_min": 40,
                             "sync": false
                         }
                     },
                     "line_linked": {
-                        "enable": true,
+                        "enable": false,
                         "distance": 120,
                         "color": "#5507fc",
                         "opacity": 0.2,
@@ -58,8 +58,8 @@ export function initHero() {
                     },
                     "move": {
                         "enable": true,
-                        "speed": 3,
-                        "direction": "top",
+                        "speed": 8,
+                        "direction": "none",
                         "random": false,
                         "straight": false,
                         "out_mode": "out",
@@ -75,7 +75,7 @@ export function initHero() {
                     "detect_on": "canvas",
                     "events": {
                         "onhover": {
-                            "enable": true,
+                            "enable": false,
                             "mode": "grab"
                         },
                         "onclick": {
@@ -85,7 +85,7 @@ export function initHero() {
                     },
                     "modes": {
                         "grab": {
-                            "distance": 140,
+                            "distance": 400,
                             "line_linked": {
                                 "opacity": 1
                             }
